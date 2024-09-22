@@ -5,7 +5,7 @@ using System.Data.SQLite;
 using PROCESO_CRUD.Modelo;
 
 namespace PROCESO_CRUD.Logica
-{
+{  
     public class PersonaLogica
     {
         private static string cadena = ConfigurationManager.ConnectionStrings["cadena"].ConnectionString;
@@ -31,10 +31,10 @@ namespace PROCESO_CRUD.Logica
                 try
                 {
                     conexion.Open();
-                    string query = "insert into Persona (nombre, sueldo) values (@nombre, @sueldo)";
+                    string query = "insert into Persona (nombre, clave) values (@nombre, @clave)";
                     SQLiteCommand cmd = new SQLiteCommand(query, conexion);
                     cmd.Parameters.Add(new SQLiteParameter("@nombre", obj.pcNombrePersona));
-                    cmd.Parameters.Add(new SQLiteParameter("@sueldo", obj.pnSueldoPersona));
+                    cmd.Parameters.Add(new SQLiteParameter("@clave", obj.pnClavePersona));
                     cmd.CommandType = System.Data.CommandType.Text;
 
                     if (cmd.ExecuteNonQuery() < 1)
@@ -61,11 +61,11 @@ namespace PROCESO_CRUD.Logica
                 try
                 {
                     conexion.Open(); 
-                    string query = "update Persona set nombre=@nombre, sueldo=@sueldo where id=@pnIdPersona";
+                    string query = "update Persona set nombre=@nombre, clave=@clave where id=@pnIdPersona";
                     SQLiteCommand cmd = new SQLiteCommand(query, conexion); 
                     cmd.Parameters.Add(new SQLiteParameter("@pnIdPersona", obj.pnIdPersona));
                     cmd.Parameters.Add(new SQLiteParameter("@nombre", obj.pcNombrePersona));
-                    cmd.Parameters.Add(new SQLiteParameter("@sueldo", obj.pnSueldoPersona));
+                    cmd.Parameters.Add(new SQLiteParameter("@clave", obj.pnClavePersona));
                     cmd.CommandType = System.Data.CommandType.Text; 
                     if (cmd.ExecuteNonQuery() < 1)
                     {
@@ -119,7 +119,7 @@ namespace PROCESO_CRUD.Logica
                 try
                 {
                     conexion.Open();
-                    string query = "SELECT id, nombre, sueldo FROM Persona";
+                    string query = "SELECT id, nombre, clave FROM Persona";
                     SQLiteCommand cmd = new SQLiteCommand(query, conexion);
                     cmd.CommandType = System.Data.CommandType.Text;
 
@@ -139,14 +139,10 @@ namespace PROCESO_CRUD.Logica
                              
                             persona.pcNombrePersona = dr["nombre"] != DBNull.Value ? dr["nombre"].ToString() : string.Empty;
                              
-                            if (dr["sueldo"] != DBNull.Value && double.TryParse(dr["sueldo"].ToString(), out double lnSueldo))
+                            if (dr["clave"] != DBNull.Value && int.TryParse(dr["clave"].ToString(), out int lnClave))
                             {
-                                persona.pnSueldoPersona = lnSueldo;
-                            }
-                            else
-                            {
-                                persona.pnSueldoPersona = 0.0;  
-                            }
+                                persona.pnClavePersona = lnClave;
+                            } 
 
                             oLista.Add(persona);
                         }

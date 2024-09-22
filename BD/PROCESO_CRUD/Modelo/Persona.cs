@@ -10,7 +10,7 @@ namespace PROCESO_CRUD.Modelo
     {
         public int pnIdPersona {  get; set; }
         public string pcNombrePersona { get; set; }
-        public double pnSueldoPersona { get; set; }
+        public int pnClavePersona { get; set; }
 
     }
 }

@@ -16,7 +16,7 @@ namespace PROCESO_CRUD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fmr_Panel());
+            Application.Run(new frmInicio());
         }
     }
 }

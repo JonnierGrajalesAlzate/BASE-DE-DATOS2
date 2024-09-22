@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\57304\\Desktop\\MIPROYECTO\\PROCESO_CRUD\\",
+  "WorkspaceRootPath": "C:\\Users\\57304\\Desktop\\Base de Datos\\BD\\PROCESO_CRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87BA743F-2DE8-461D-8931-D7AD82E2DA8E}|PROCESO_CRUD.csproj|c:\\users\\57304\\desktop\\miproyecto\\proceso_crud\\logica\\personalogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87BA743F-2DE8-461D-8931-D7AD82E2DA8E}|PROCESO_CRUD.csproj|solutionrelative:logica\\personalogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87BA743F-2DE8-461D-8931-D7AD82E2DA8E}|PROCESO_CRUD.csproj|c:\\users\\57304\\desktop\\base de datos\\bd\\proceso_crud\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87BA743F-2DE8-461D-8931-D7AD82E2DA8E}|PROCESO_CRUD.csproj|solutionrelative:frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87BA743F-2DE8-461D-8931-D7AD82E2DA8E}|PROCESO_CRUD.csproj|C:\\Users\\57304\\Desktop\\Base de Datos\\BD\\PROCESO_CRUD\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{87BA743F-2DE8-461D-8931-D7AD82E2DA8E}|PROCESO_CRUD.csproj|solutionrelative:frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87BA743F-2DE8-461D-8931-D7AD82E2DA8E}|PROCESO_CRUD.csproj|C:\\Users\\57304\\Desktop\\Base de Datos\\BD\\PROCESO_CRUD\\frmbasedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{87BA743F-2DE8-461D-8931-D7AD82E2DA8E}|PROCESO_CRUD.csproj|solutionrelative:frmbasedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +27,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PersonaLogica.cs",
-              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\MIPROYECTO\\PROCESO_CRUD\\Logica\\PersonaLogica.cs",
-              "RelativeDocumentMoniker": "Logica\\PersonaLogica.cs",
-              "ToolTip": "C:\\Users\\57304\\Desktop\\MIPROYECTO\\PROCESO_CRUD\\Logica\\PersonaLogica.cs",
-              "RelativeToolTip": "Logica\\PersonaLogica.cs",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAAAJ0AAAARAAAA",
+              "Title": "frmInicio.cs",
+              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\Base de Datos\\BD\\PROCESO_CRUD\\frmInicio.cs",
+              "RelativeDocumentMoniker": "frmInicio.cs",
+              "ToolTip": "C:\\Users\\57304\\Desktop\\Base de Datos\\BD\\PROCESO_CRUD\\frmInicio.cs",
+              "RelativeToolTip": "frmInicio.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAEwEEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T14:33:29.338Z",
+              "WhenOpened": "2024-09-22T00:27:28.297Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmInicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\Base de Datos\\BD\\PROCESO_CRUD\\frmInicio.cs",
+              "RelativeDocumentMoniker": "frmInicio.cs",
+              "ToolTip": "C:\\Users\\57304\\Desktop\\Base de Datos\\BD\\PROCESO_CRUD\\frmInicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmInicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T00:26:47.74Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmBaseDatos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\57304\\Desktop\\Base de Datos\\BD\\PROCESO_CRUD\\frmBaseDatos.cs",
+              "RelativeDocumentMoniker": "frmBaseDatos.cs",
+              "ToolTip": "C:\\Users\\57304\\Desktop\\Base de Datos\\BD\\PROCESO_CRUD\\frmBaseDatos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "frmBaseDatos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T00:26:38.977Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

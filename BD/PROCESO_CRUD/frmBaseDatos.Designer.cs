@@ -1,6 +1,6 @@
 ﻿namespace PROCESO_CRUD
 {
-    partial class fmr_Panel
+    partial class frm_BaseDatos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -30,10 +30,10 @@
         {
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.lblSueldo = new System.Windows.Forms.Label();
+            this.lblClave = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtSueldo = new System.Windows.Forms.TextBox();
+            this.txtClave = new System.Windows.Forms.TextBox();
             this.govContenedor = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
@@ -61,14 +61,14 @@
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre";
             // 
-            // lblSueldo
+            // lblClave
             // 
-            this.lblSueldo.AutoSize = true;
-            this.lblSueldo.Location = new System.Drawing.Point(244, 41);
-            this.lblSueldo.Name = "lblSueldo";
-            this.lblSueldo.Size = new System.Drawing.Size(40, 13);
-            this.lblSueldo.TabIndex = 2;
-            this.lblSueldo.Text = "Sueldo";
+            this.lblClave.AutoSize = true;
+            this.lblClave.Location = new System.Drawing.Point(244, 41);
+            this.lblClave.Name = "lblClave";
+            this.lblClave.Size = new System.Drawing.Size(34, 13);
+            this.lblClave.TabIndex = 2;
+            this.lblClave.Text = "Clave";
             // 
             // txtId
             // 
@@ -84,12 +84,12 @@
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 4;
             // 
-            // txtSueldo
+            // txtClave
             // 
-            this.txtSueldo.Location = new System.Drawing.Point(247, 57);
-            this.txtSueldo.Name = "txtSueldo";
-            this.txtSueldo.Size = new System.Drawing.Size(100, 20);
-            this.txtSueldo.TabIndex = 5;
+            this.txtClave.Location = new System.Drawing.Point(247, 57);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(100, 20);
+            this.txtClave.TabIndex = 5;
             // 
             // govContenedor
             // 
@@ -97,11 +97,11 @@
             this.govContenedor.Controls.Add(this.btnActualizar);
             this.govContenedor.Controls.Add(this.btnGuardar);
             this.govContenedor.Controls.Add(this.txtId);
-            this.govContenedor.Controls.Add(this.txtSueldo);
+            this.govContenedor.Controls.Add(this.txtClave);
             this.govContenedor.Controls.Add(this.lblCedula);
             this.govContenedor.Controls.Add(this.txtNombre);
             this.govContenedor.Controls.Add(this.lblNombre);
-            this.govContenedor.Controls.Add(this.lblSueldo);
+            this.govContenedor.Controls.Add(this.lblClave);
             this.govContenedor.Location = new System.Drawing.Point(12, 12);
             this.govContenedor.Name = "govContenedor";
             this.govContenedor.Size = new System.Drawing.Size(385, 129);
@@ -162,14 +162,14 @@
             this.dgvPersonas.Size = new System.Drawing.Size(385, 176);
             this.dgvPersonas.TabIndex = 7;
             // 
-            // fmr_Panel
+            // frm_BaseDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 334);
             this.Controls.Add(this.dgvPersonas);
             this.Controls.Add(this.govContenedor);
-            this.Name = "fmr_Panel";
+            this.Name = "frm_BaseDatos";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.fmr_Panel_Load);
             this.govContenedor.ResumeLayout(false);
@@ -183,10 +183,10 @@
 
         private System.Windows.Forms.Label lblCedula;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblSueldo;
+        private System.Windows.Forms.Label lblClave;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtSueldo;
+        private System.Windows.Forms.TextBox txtClave;
         private System.Windows.Forms.GroupBox govContenedor;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnActualizar;

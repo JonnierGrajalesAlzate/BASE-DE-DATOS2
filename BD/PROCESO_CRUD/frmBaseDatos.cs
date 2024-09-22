@@ -17,9 +17,9 @@ BaseDeDatos CRUD con Sqlite
 
 namespace PROCESO_CRUD
 {
-    public partial class fmr_Panel : Form
+    public partial class frm_BaseDatos : Form
     {
-        public fmr_Panel()
+        public frm_BaseDatos()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace PROCESO_CRUD
             Persona objeto = new Persona()
             { 
                 pcNombrePersona = txtNombre.Text,
-                pnSueldoPersona = double.Parse(txtSueldo.Text)
+                pnClavePersona = int.Parse(txtClave.Text)
             };
 
             bool respuesta = PersonaLogica.Instacia.Guardar(objeto);
@@ -51,7 +51,7 @@ namespace PROCESO_CRUD
         {
             txtId.Text = "";
             txtNombre.Text = "";
-            txtSueldo.Text = "";
+            txtClave.Text = "";
             txtNombre.Focus();
         }
 
@@ -74,9 +74,9 @@ namespace PROCESO_CRUD
 
             dgvPersonas.Columns.Add(new DataGridViewTextBoxColumn()
             {
-                Name = "pnSueldoPersona",
-                HeaderText = "Sueldo",
-                DataPropertyName = "pnSueldoPersona"
+                Name = "pnClavePersona",
+                HeaderText = "Clave",
+                DataPropertyName = "pnClavePersona"
             });
 
             mostrar_personas();
@@ -106,7 +106,7 @@ namespace PROCESO_CRUD
             {
                 pnIdPersona = int.Parse(txtId.Text),
                 pcNombrePersona = txtNombre.Text,
-                pnSueldoPersona = double.Parse(txtSueldo.Text)
+                pnClavePersona = int.Parse(txtClave.Text)
             };
 
             bool respuesta = PersonaLogica.Instacia.Actualizar(objeto);
